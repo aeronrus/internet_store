@@ -23,13 +23,14 @@ function loadGoods() {
       let goods = document.getElementById('goods');
       goods.insertAdjacentHTML("afterbegin", out);
 
-     let btnbuy = document.getElementsByClassName('add-to-cart');
-      btnbuy.onclick = addToCart;
 
 
    })
 }
-console.log('pizdec2')
+
+let btnbuy = document.getElementsByClassName('add-to-cart');
+btnbuy.onclick = addToCart;
+console.log(btnbuy)
 
 function addToCart() {
    //add merchandaise in pocket
@@ -44,4 +45,3 @@ function addToCart() {
    console.log(cart);
 
 }
-
