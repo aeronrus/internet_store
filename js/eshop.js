@@ -23,8 +23,9 @@ function loadGoods() {
       let goods = document.getElementById('goods');
       goods.insertAdjacentHTML("afterbegin", out);
 
-      let btnbuy = document.getElementsByClassName("add-to-cart");
+     let btnbuy = $('button.add-to-cart');
       btnbuy.onclick = addToCart;
+
 
    })
 }
