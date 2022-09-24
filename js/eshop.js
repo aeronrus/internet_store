@@ -25,7 +25,7 @@ function loadGoods() {
       goods.insertAdjacentElement("afterbegin", single);
 
       let btnbuy = document.querySelector(".add-to-cart");
-      btnbuy.onclick() = addToCart();
+      btnbuy.onclick = addToCart;
 
    })
 }
