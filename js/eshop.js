@@ -25,13 +25,13 @@ function loadGoods() {
       let goods = document.getElementById('goods');
       goods.insertAdjacentHTML("afterbegin", out);
 
-let btnbuy = document.querySelector('add-to-cart');
-btnbuy.addEventListener("click", addToCart);
-console.log(btnbuy);
-
    })
 }
 
+
+let btnbuy = document.querySelector('.add-to-cart');
+btnbuy.addEventListener("click", addToCart);
+console.log(btnbuy);
 
 function addToCart() {
    //add merchandaise in pocket
