@@ -1,0 +1,32 @@
+{
+   "11234": {
+      "name": "Яблоки",
+      "cost": 12,
+      "description": "Свежие яблоки Голден",
+      "image": "images/apple.jpg"
+   },
+   "11235": {
+      "name": "Лимоны",
+      "cost": 10,
+      "description": "Лимоны класса 'А' ",
+      "image": "images/lemon.png"
+   },
+   "11236": {
+      "name": "Груши",
+      "cost": 18,
+      "description": "Груши прямиком из Дании",
+      "image": "images/pear.png"
+   },
+   "11237": {
+      "name": "Клубника",
+      "cost": 22,
+      "description": "Клубника, вырощенная в теплом климате Краснодарского края",
+      "image": "images/strawberry.jpeg"
+   },
+   "11238": {
+      "name": "Бананы",
+      "cost": 11,
+      "description": "Бананы из Африки",
+      "image": "images/bananas.png"
+   }
+}
