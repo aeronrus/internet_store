@@ -14,8 +14,9 @@ function loadGoods() {
          out += '<button>Купить</button>';
          out += '</div>';
       }
-      $('#goods').html(out);
+       let goods = document.getElementById('goods');
+      goods.innerHTML = out;
+
    })
 }
-
-console.log('no work')
+console.log('pizdec')
