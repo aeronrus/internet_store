@@ -23,7 +23,7 @@ function loadGoods() {
       let goods = document.getElementById('goods');
       goods.insertAdjacentHTML("afterbegin", out);
 
-     let btnbuy = document.querySelectorAll('.add-to-cart');
+     let btnbuy = document.getElementsByClassName('add-to-cart');
       btnbuy.onclick = addToCart;
 
 
