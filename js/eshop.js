@@ -29,7 +29,7 @@ function loadGoods() {
 }
 
 
-let btnbuy = document.querySelector('.add-to-cart');
+let btnbuy = document.querySelectorAll('.add-to-cart');
 btnbuy.addEventListener("click", addToCart);
 console.log(btnbuy);
 
