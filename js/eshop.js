@@ -34,7 +34,7 @@ console.log(btnbuy)
 
 function addToCart() {
    //add merchandaise in pocket
-   var articul = btnbuy.attr('data-art');
+   var articul = $(this).attr('data-art');
    if (cart[articul] != undefined) {
       cart[articul]++;
    }
