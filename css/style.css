@@ -1,4 +1,4 @@
-.goods {
+.single_goods {
    width: 200px;
    height: 300px;
    border: 1px solid black;
@@ -7,7 +7,7 @@
    margin: 10px;
 }
 
-.goods button {
+.single_goods button {
    display: block;
    margin: 20px auto;
 }
