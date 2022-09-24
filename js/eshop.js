@@ -31,8 +31,8 @@ function loadGoods() {
 }
 
 let btnbuy = document.querySelector('add-to-cart');
-btnbuy.onclick = addToCart;
-console.log(btnbuy)
+btnbuy.addEventListener("click", addToCart);
+console.log(btnbuy);
 
 function addToCart() {
    //add merchandaise in pocket
