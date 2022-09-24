@@ -34,7 +34,14 @@ console.log('pizdec2')
 function addToCart() {
    //add merchandaise in pocket
    var articul = $(this).attr('data-art');
-   cart[articul] = 1;
+   if (cart[articul] != undefined) {
+      cart[articul]++;
+   }
+   else {
+      cart[articul] = 1
+   }
+
    console.log(cart);
 
 }
+
