@@ -5,7 +5,6 @@ $('document').ready(function () {
 function loadGoods() {
 
   $.getJSON('goods.json', function (data) {
-      let goods = document.getElementById('goods');
       var out = '';
    for (var key in data) {
          out += '<div class="single_goods">';
