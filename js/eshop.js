@@ -23,7 +23,7 @@ function loadGoods() {
       let btnbuy = document.querySelectorAll('add-to-cart');
       goods.insertAdjacentHTML("afterbegin", out);
 
-     let btnbuy = document.querySelectorAll(';
+     let btnbuy = $('button.add-to-cart');
       btnbuy.onclick = addToCart;
 
 
@@ -34,7 +34,7 @@ console.log('pizdec2')
 function addToCart() {
    //add merchandaise in pocket
    var articul = $(this).attr('data-art');
-   cart[articul] = 1
+   cart[articul] = 1;
    console.log(cart);
 
 }
