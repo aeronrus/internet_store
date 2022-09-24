@@ -13,12 +13,12 @@ function loadGoods() {
       let single = document.createElement('div');
       single.classList.add('single_goods')
       for (var key in data) {
-
+         single.innerHTML += '<div class="market">';
          single.innerHTML += '<h3>' + data[key]['name'] + '</h3>';
          single.innerHTML += '<p>Цена: ' + data[key]['cost'] + '</p>';
          single.innerHTML += '<img src="' + data[key].image + '" width = 150px height = 150px >';
          single.innerHTML += '<button class="add-to-cart" data-art="' + key + '">Купить</button>';
-
+         single.innerHTML += '</div>';
       }
 
       let goods = document.getElementById('goods');
