@@ -11,7 +11,7 @@ function loadGoods() {
 
          single.innerHTML += '<h3>' + data[key]['name'] + '</h3>';
          single.innerHTML += '<p>Цена: ' + data[key]['cost'] + '</p>';
-         single.innerHTML += '<img src="' + data[key].image + '" >';
+         single.innerHTML += '<img src="' + data[key].image + '" width = 150 height = 150 >';
          single.innerHTML += '<button class="add-to-cart" data-art="' + key + '">Купить</button>';
 
       }
