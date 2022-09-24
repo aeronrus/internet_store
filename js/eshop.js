@@ -1,4 +1,4 @@
-var cart = []; //packet
+var cart = {}; //packet
 
 
 
@@ -10,19 +10,18 @@ function loadGoods() {
 
    $.getJSON('goods.json', function (data) {
       var out = '';
-      let single = document.createElement('div');
-      single.classList.add('single_goods')
+
       for (var key in data) {
-         single.innerHTML += '<div class="market">';
-         single.innerHTML += '<h3>' + data[key]['name'] + '</h3>';
-         single.innerHTML += '<p>Цена: ' + data[key]['cost'] + '</p>';
-         single.innerHTML += '<img src="' + data[key].image + '" width = 150px height = 150px >';
-         single.innerHTML += '<button class="add-to-cart" data-art="' + key + '">Купить</button>';
-         single.innerHTML += '</div>';
+         out += '<div class="single_goods">';
+         out += '<h3>' + data[key]['name'] + '</h3>';
+         out += '<p>Цена: ' + data[key]['cost'] + '</p>';
+         out += '<img src="' + data[key].image + '" width = 150px height = 150px >';
+         out += '<button class="add-to-cart" data-art="' + key + '">Купить</button>';
+         out += '</div>';
       }
 
       let goods = document.getElementById('goods');
-      goods.insertAdjacentElement("afterbegin", single);
+      goods.insertAdjacentHTML("afterbegin", out);
 
       let btnbuy = document.querySelector(".add-to-cart");
       btnbuy.onclick = addToCart;
