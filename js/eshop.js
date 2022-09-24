@@ -17,3 +17,5 @@ function loadGoods() {
       $('#goods').html(out);
    })
 }
+
+console.log('no work')
