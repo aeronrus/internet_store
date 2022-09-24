@@ -20,10 +20,10 @@ function loadGoods() {
          out += '</div>';
       }
 
-      let goods = document.getElementById('goods');
+      let btnbuy = document.querySelectorAll('add-to-cart');
       goods.insertAdjacentHTML("afterbegin", out);
 
-     let btnbuy = $('button.add-to-cart');
+     let btnbuy = document.querySelectorAll(';
       btnbuy.onclick = addToCart;
 
 
