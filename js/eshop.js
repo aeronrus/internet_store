@@ -59,8 +59,9 @@ function checkCart() {
 function addToMinicart() {
    var ont = '';
    for (var keu in cart) {
-      ont += 'В корзине:' + keu + '------' + cart[keu] + '<br>';
+      ont += keu + '------' + cart[keu] + '<br>';
    }
+    ont += 'В корзине:'
    let minicart = document.getElementById('mini_cart');
    minicart.insertAdjacentHTML("afterbegin", ont);
 
