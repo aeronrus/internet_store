@@ -58,7 +58,7 @@ function checkCart() {
 
 //функция для вывода корзины
 function addToMinicart() {
-   var ont = 'В корзине:'
+   var ont = 'В корзине:';
    for (var keu in cart) {
       ont += keu + '------' + cart[keu] + '<br>';
    }
