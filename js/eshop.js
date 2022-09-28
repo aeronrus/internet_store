@@ -33,7 +33,7 @@ console.log(btnbuy);
 }
 
 
-let btnbuy = document.querySelector('.add-to-cart');
+let btnbuy = document.getElementsByClassName('add-to-cart');
 btnbuy.addEventListener("click", addToCart);
 console.log(btnbuy);
 
@@ -63,7 +63,7 @@ function checkCart() {
 function addToMinicart() {
    var ont = '';
    for (var keu in cart) {
-      ont += '<p>В корзине: ' '</p>';
+      ont += '<p>'В корзине:  '</p>';
       ont += keu + '------' + cart[keu] + '<br>';
    }
    let minicart = document.getElementById('mini_cart');
