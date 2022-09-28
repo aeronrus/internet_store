@@ -63,6 +63,7 @@ function checkCart() {
 function addToMinicart() {
    var ont = '';
    for (var keu in cart) {
+      ont += '<p>В корзине: ' '</p>';
       ont += keu + '------' + cart[keu] + '<br>';
    }
    let minicart = document.getElementById('mini_cart');
