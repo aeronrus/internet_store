@@ -26,12 +26,13 @@ function loadGoods() {
       goods.insertAdjacentHTML("afterbegin", out);
       
 let btnbuy = document.getElementsByClassName('.add-to-cart');
-btnbuy.addEventListener("click", addToCart);
 console.log(btnbuy);
 
    })
 }
 
+let btnbuy = document.getElementsByClassName('.add-to-cart');
+console.log(btnbuy);
 
 function addToCart() {
    //add merchandaise in pocket
@@ -57,11 +58,11 @@ function checkCart() {
 
 //функция для вывода корзины
 function addToMinicart() {
-   var ont = '';
+   var ont += 'В корзине:'
    for (var keu in cart) {
       ont += keu + '------' + cart[keu] + '<br>';
    }
-    ont += 'В корзине:'
+    
    let minicart = document.getElementById('mini_cart');
    minicart.insertAdjacentHTML("afterbegin", ont);
 
