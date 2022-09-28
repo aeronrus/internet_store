@@ -17,7 +17,7 @@ $.getJSON('goods.json', function (data) {
          var out = '';
          for (let key in cart) {
             out += '<button class="delete" data-art="' + key + '">Удалить</button>';
-            out += '<img src="' + goods[key][image] + '" width = 50 height = 50>';
+            out += '<img src="' + goods[key].image + '" width = "50" height = "50">';
             out += goods[key][name];
             out += '<button class = "minus" data-art="' + key + '">---</button>';
             out += cart[key];
