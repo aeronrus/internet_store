@@ -10,7 +10,7 @@ $.getJSON('goods.json', function (data) {
 
 
    function showCart() {
-      if ($isEmptyObject(cart)) {
+      if (Object.keys(cart).length === 0;) {
          var out = '<div class = "inform">Корзина пуста. Добавьте товары <a href = "/internet_store.com">Главная страница</a></div>';
          mycart.insertAdjacentHTML('afterbegin', out);
       } else {
